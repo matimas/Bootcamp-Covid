@@ -9,6 +9,8 @@ body {
 	font-size: 10px;
 }
 .container {
+	height: 100vh;
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,11 +23,14 @@ body {
 	justify-content: center;
 }
 .chart-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 800px;
 	height: 800px;
+	position: relative;
+	border: 44px solid black;
+	overflow: hidden;
+	margin: 0px 0px 28px 0px;
+	padding: 33px 0px 0px 0px;
+	border-radius: 20px;
 }
 .btn-container {
 	display: flex;
@@ -41,4 +46,49 @@ body {
 	background: linear-gradient(243deg, #ffcaca, transparent);
 	box-shadow: 5px 5px 5px #333;
 	cursor: pointer;
+}
+.btn:hover {
+	background-color: lightpink;
+}
+.country-container {
+	height: 300px;
+	display: flex;
+	border: 31px solid rgb(0, 0, 0);
+	border-radius: 20px;
+	margin-top: 104px px;
+	overflow: hidden;
+}
+.user-input {
+	border-radius: 20px;
+	width: 102px;
+	background: lightcoral;
+	margin: 10px;
+	cursor: pointer;
+	color: rgb(0, 63, 60);
+	text-align: center;
+	border: 2px solid red;
+}
+.country-item-dynamic {
+	height: 250px;
+	overflow: scroll;
+}
+.country-info {
+	width: 258px;
+	height: 201px;
+	flex-direction: row;
+	background: #f5b7b7;
+	border: 2px solid red;
+	top: 167px;
+	left: 145px;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	display: 'none';
+	border-radius: 20px;
+}
+.country-info p {
+	color: white;
+	font-size: 1vw;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
 }
