@@ -12,35 +12,90 @@
 
 	<body>
 		<div class="container">
-			<div class="latest-container">
-				<button id="countries_confirmed" class="btn btnConfirmd" type="button">
-					Confirmd
-				</button>
-				<button id="countries_critical" class="btn btnCritical" type="button">
-					Critical
-				</button>
-				<button id="countries_deaths" class="btn btnDeaths" type="button">
-					Deaths
-				</button>
-				<button id="countries_recovered" class="btn btnRecovared" type="button">
-					Recovared
-				</button>
-			</div>
-			<div class="chart-container">
-				<canvas id="region-chart"></canvas>
-				<canvas id="country-chart" width="40" height="100"></canvas>
-			</div>
-			<div class="btn-container">
-				<button id="world" class="btn btnWorld" type="button">World</button>
-				<button id="asia" class="btn btnAsia" type="button">Asia</button>
-				<button id="africa" class="btn btnAfrica" type="button">Africa</button>
-				<button id="americas" class="btn btnAmerica" type="button">
-					America
-				</button>
-				<button id="europe" class="btn btnEurope" type="button">Europe</button>
-			</div>
-			<div class="country-container"></div>
+			<!-- Header -->
+			<header class="main-header">
+				<h1>📊 COVID-19 Global Dashboard</h1>
+				<p>Real-time coronavirus statistics by region and country</p>
+			</header>
+			
+			<!-- Statistics Controls -->
+			<section class="controls-section">
+				<h3>📈 Data Type</h3>
+				<div class="latest-container">
+					<button id="countries_confirmed" class="btn btnConfirmd" type="button">
+						<span>✅</span> Confirmed
+					</button>
+					<button id="countries_critical" class="btn btnCritical" type="button">
+						<span>⚠️</span> Critical
+					</button>
+					<button id="countries_deaths" class="btn btnDeaths" type="button">
+						<span>💀</span> Deaths
+					</button>
+					<button id="countries_recovered" class="btn btnRecovared" type="button">
+						<span>💚</span> Recovered
+					</button>
+				</div>
+			</section>
+			
+			<!-- Chart Display -->
+			<section class="chart-section">
+				<div class="chart-container">
+					<canvas id="region-chart"></canvas>
+					<canvas id="country-chart" width="40" height="100"></canvas>
+				</div>
+			</section>
+			
+			<!-- Region Selection -->
+			<section class="region-section">
+				<h3>🌍 Select Region</h3>
+				<div class="btn-container">
+					<button id="world" class="btn btnWorld" type="button">
+						<span>🌍</span> World
+					</button>
+					<button id="asia" class="btn btnAsia" type="button">
+						<span>🌏</span> Asia
+					</button>
+					<button id="africa" class="btn btnAfrica" type="button">
+						<span>🌍</span> Africa
+					</button>
+					<button id="americas" class="btn btnAmerica" type="button">
+						<span>🌎</span> Americas
+					</button>
+					<button id="europe" class="btn btnEurope" type="button">
+						<span>🌍</span> Europe
+					</button>
+				</div>
+			</section>
+			
+			<!-- Countries List -->
+			<section class="countries-section">
+				<div class="country-container"></div>
+			</section>
 		</div>
+		
+		<!-- Footer -->
+		<footer class="main-footer">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h4>📊 COVID-19 Dashboard</h4>
+					<p>Real-time coronavirus statistics worldwide</p>
+				</div>
+				<div class="footer-section">
+					<h4>🔗 Data Sources</h4>
+					<p><a href="https://api.api-ninjas.com" target="_blank">API Ninjas</a></p>
+					<p>Updated regularly with latest data</p>
+				</div>
+				<div class="footer-section">
+					<h4>ℹ️ About</h4>
+					<p>Built with modern web technologies</p>
+					<p>Responsive design for all devices</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2024 COVID-19 Dashboard. Built for educational purposes.</p>
+			</div>
+		</footer>
+		
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</body>
 </html>
